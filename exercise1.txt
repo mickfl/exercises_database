@@ -7,3 +7,5 @@ or push an existing repository from the command line
 git add "file_name.txt"
 git commit -m "first"
 git push -u origin master
+   username=mickfl
+   password=mickottoke12
