@@ -1,2 +1,33 @@
 exercise2
+UNF
+patient(staffno,dentistname,patientNo, patientname, appointment,surgeryno)
+appointment is een repeating group
+1NF
+patient(staffno,dentistname,patientNo, patientname, appointmentdate,appointmenttime,surgeryno)
+   
+   #potentieele keys(staffno, apptdate,appttime)
+   
+2NF
+appointment(staffno, apptdate, appttime, patientno, patientname)
+   surgery(staffno, apptdate, surgeryno)
+   dentist(staffno, dentistname)
+   
+ #potential keys(staffno, apptdate, appttime-staffno,apptdate-staffno)
+3NF
+dentist(staffno,dentistname)
+surgery(staffno,apptdate,surgeryno)
+patient(patientno,patientname)
+appointment(staffno,apptdate,appttime,patientno)
+
+#potential keys(staffno-staffno, apptdate-patientno-staffno, apptdate, appttime)
+
+BCNF = 3nf
+dentist(staffno,dentistname)
+surgery(staffno,apptdate,surgeryno)
+patient(patientno,patientname)
+appointment(staffno,apptdate,appttime,patientno)
+
+#potential keys(staffno-staffno, apptdate-patientno-staffno, apptdate, appttime)
+
+
 
