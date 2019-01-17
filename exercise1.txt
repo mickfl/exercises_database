@@ -2,16 +2,8 @@ HEY
 or push an existing repository from the command line
    git remote add origin https://github.com/mickfl/exercises_database.git
    git push -u origin master
-exercise2
 
-exercise3
 
-exercise4
-
-exercise5
-
-exercise6
-
-exercise7
-
-exercise8
+git add "file_name.txt"
+git commit -m "first"
+git push -u origin master
